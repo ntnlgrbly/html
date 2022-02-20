@@ -1,0 +1,45 @@
+body{
+    background-image: url(images/connect.jpg);
+   background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    font-weight: Century Gothic;
+  }  
+
+main{
+      margin-top:110px;
+      margin-bottom: 60px;
+  }
+  main h1{
+    font-family: system-ui;
+  }
+
+
+  .form input,
+  select,
+  textarea
+ {
+   background: rgba(255, 255, 255, 0.6);
+       padding:8px;
+      }     
+ .form label{
+     color: rgb(21, 4, 255);
+     margin-right:5px;
+ }
+ .form input{
+   margin-right: 16px;
+ }
+
+
+ .form .btn_form{
+     color:rgba(0, 174, 255, 0.726) ;
+     background: rgba(250, 0, 0, 0.472);
+    border-radius: 100px;
+     padding: 8px;
+     color: #0429ff;
+     text-shadow: 1px 1px 0 #7A7A7A;
+ }
+ .form .btn_form:hover{
+     color:rgb(255, 7, 7) ;
+     background: rgba(241, 225, 0, 0.726) ;
+ }

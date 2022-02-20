@@ -1,0 +1,144 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container-fluid{
+  width:100%;
+}
+.container{
+  max-width: 1140px;
+}
+
+
+header{
+  min-height: 50px;
+  background:transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.6s;
+  z-index: 999;  
+}
+header nav{
+  font-family: cursive;
+  justify-content: space-around;
+  z-index: 999; 
+  transition: 0.6s;
+  align-items: center;
+}
+header nav a{
+  color:rgb(39, 38, 38);
+  text-decoration: none;
+  padding:0 12px;
+  
+}
+
+header.sticky{
+  height: 52px;
+  padding: 5px 100px;
+  background: rgb(231, 38, 38);
+}
+header .search{
+  border:1px solid grey;
+  padding:8px;
+  border-radius: 8px;
+}
+
+header .search input{
+  /* מוריד את המסגרת של האינפוט */
+  border:none;
+  /* מעיף את הסימון שהוא בפוקוס */
+  outline: none;
+}
+
+header .search button{
+  border:none;
+  /* מעיף את הסימון שהוא בפוקוס */
+  outline:none;
+  /* רקע שקוף */
+  background: transparent;
+}
+
+/* שהעכבר לחוץ עליו */
+header .search button:active{
+  transform: translate(0,2px); 
+}
+
+header .burger{
+  /* מעלים במצב דסקטופ את האייקון
+  של ההמבורגר */
+  display: none;
+}
+
+
+header .search button{
+  border:none;
+  /* מעיף את הסימון שהוא בפוקוס */
+  outline:none;
+  /* רקע שקוף */
+  background: transparent;
+}
+
+header a:hover{
+  color:rgb(255, 251, 0);
+  font-family: 'Stick No Bills', sans-serif;
+  font-size: 1em;
+  z-index: 99;
+
+}
+footer .container{
+ 
+  margin-bottom: 8px;
+}
+footer a{
+/* הבפנים של הלינקים*/
+background: rgb(0, 0, 0);
+ color: white;
+ border-radius: 16px;
+ padding: 0px 6px;
+ border: 1px solid white;   
+}
+
+
+/* מה קורה מ991 פיקסלים ומטה */
+@media (max-width:991px){
+  header .nav_search{
+    /* !important - דואג שהוא יקבע גם אם יש בסי אס אס אחר או בבוטסראפ משהו שמבטל אותו 
+    d-md-flex כגון הקלאס*/
+    display: none ;
+    position: absolute;
+    top: 80px;
+    right:0;
+    width:50%;
+    background: white;
+  }
+
+  header .burger{
+    display: block;
+    text-align: right;
+  }
+
+  header .burger i{
+    font-size: 2em;
+  }
+
+  header .nav_search a{
+    display: block;
+    text-align: center;
+    padding:12px;
+    border-top: 1px solid grey;
+  }
+
+  header .search{
+    /* גורם לאינפוט ולכפתור
+    להיות אחד ליד השני */
+    display: flex;
+    margin:12px 0;
+  }
+}

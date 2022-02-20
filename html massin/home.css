@@ -1,0 +1,174 @@
+ body{
+   height: 750px;
+   background:rgb(255, 254, 254);
+   margin: 5 ;
+   padding: 5;
+   font-family: sans-serif;
+ }
+
+
+ .slider{
+
+  padding: 0;
+  background: rgb(0, 0, 0);
+}
+
+
+ /*.class{
+  background: rgb(83, 138, 185);
+}*/
+.slider .carousel-item{
+  /*גודל של הקרוסלה */
+  min-height: 490px;
+  background-size:cover;
+  background-position: center;
+  font-family: fangsong;
+}
+
+h5{
+  color: #d31919a8;
+  
+}
+main h1{
+  font-family: revert;
+  color: #A31925;
+  background: #A31925;
+  text-shadow: 1px 1px 0 #000000;
+  
+}
+
+
+main h2{
+  height: 20px;
+  /*העיצוב של הכותרות של שתי הבוקסים*/
+
+  font-family: 'Stick No Bills', sans-serif;
+  color: #ee1e1ead;
+ 
+}
+
+p{
+  font: 1.2em "Fira Sans", sans-serif;
+}
+
+main .banner{
+border-radius: 8px;
+background: linear-gradient(87deg, rgb(255, 255, 255) 4%, rgba(252,252,252,1) 97%);
+}
+
+
+main .banner img{
+  color: rgb(255, 0, 0);
+  margin-top: -36px;
+  border-radius: 15px; 
+ 
+}
+
+.imgAll{
+  filter: grayscale(40%);
+}
+.imgAll:hover{
+  filter: grayscale(0%);
+  transition: 200ms;
+}
+/*  השתי בוקסים בצדדים*/
+main .about .box h2{
+
+  font-family: 'Stick No Bills', sans-serif;
+  text-align: center;
+  color: rgb(253, 0, 0);
+  text-shadow: 0px 1px 0 #f50202;
+}
+main h1{
+  color: rgb(233, 227, 227);
+}
+
+.links .container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.links .parent img{
+  border-radius:22px;
+ }
+.links .parent{
+position: relative;
+margin-bottom: 24px;
+}
+/*ה3 בוקסים למטה */
+.links .child{
+ position: absolute;
+ bottom: 0;
+ /*  הכתב בבוקסים למטה*/
+ left: 50px;
+ text-align: center;
+ font-family: ui-rounded;
+ text-shadow: 1px 1px 0 #7A7A7A;
+
+}
+.links a{
+filter: grayscale(50%);
+}/* המעבר על ה3 בוקסים למטה*/
+.links a:hover{
+ filter: grayscale(0%);
+ transition:100ms;
+ -webkit-box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0); 
+ box-shadow: 0px 0px 0px 5px #A0A0A0, inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+footer{
+  height: 75px;
+
+}
+
+
+@media (max-width: 768px){
+  header .nav_bar{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #7A7A7A;
+    border:1px solid black ;
+    padding: 0;
+    width: 50%;
+
+    transform:translate(-100%,0);
+  }
+  header .nav_bar_inside{
+
+    transform: translate(0,0);
+  }
+  header .burger i {
+    font-size: 1.5em;
+  }
+  
+  header .nav_bar a{
+    display: block;
+    text-align: center;
+    padding: 6px 0;
+    border-bottom: 2px solid gray;
+  }
+  body{
+    line-height:unset;
+  }
+ .strip{
+  display: none;
+ }
+ .Smode{
+   display: flex;
+   min-height: 300px;
+   width: 100%;
+
+   background-size: cover;
+   background-position:center;
+ }
+
+}
+
+@media (max-width: 575px){
+  .links .container{
+   justify-content: center;
+ }
+ 
+
+}

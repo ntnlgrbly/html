@@ -1,0 +1,78 @@
+
+
+/* הבאדי אחרי שלוחצים על התמונה */
+.light_box{  
+    /* גורם לדיב לעקוב אחרינו */
+    position: fixed;
+    top:0;
+    left:0;
+  
+    /* רוחב וגובה בדיוק של החלון */
+    width:100%;
+    height: 100%;
+    /* רקע שחור שקוף */
+    background: rgba(7, 7, 7, 0.705);
+    /* שתמיג יהיה הכי קדימה */
+    z-index: 999;
+    /* כדי לגרום לבוקס הפנימי להיות ממוקם באמצע */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+    box-sizing: border-box;
+  }
+  /* הבוקס של הקופסה */
+  .light_box .inside_box{
+    background: rgb(255, 0, 0);
+    padding:10px;
+    max-width: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    font-size:x-large;
+    font-family: cursive;
+  }
+  
+  .light_box .inside_box img{
+    max-width: 600px;
+    width:98%;
+    background-image: cover;
+    box-sizing: border-box;
+   
+  }
+  .light_box button{
+    background-color: #0b0f0b91;
+    border: none;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  .main-container {
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+ 
+  .main-container > div {
+    border:1px solid #020202;
+    text-align: center;
+    flex-basis: 40%;
+  }
+  .main-container .box-1 {
+    flex:1;
+    
+  }
+  .main-container .box-2 {
+    flex:1;
+  }
+  
+  main .box:hover{
+    transform: translate(10px, 5%);
+    z-index: 999;
+  }
